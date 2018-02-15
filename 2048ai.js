@@ -31,7 +31,7 @@ function Ai() {
         if (this.bar == null) this.bar = 0;
         foo = Math.random();
         foo = foo/3*10;
-        bar = Math.round(bar);
+        bar = Math.round(foo);
         return this.bar;
     }
 }
