@@ -27,9 +27,9 @@ function Ai() {
         // sample AI:
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
-        foo = Math.random();
-        foo = foo/3*10;
-        bar = Math.round(foo);
+        this.foo = Math.random();
+        this.foo = this.foo/3*10;
+        this.bar = Math.round(this.foo);
         return this.bar;
     }
 }
