@@ -32,6 +32,6 @@ function Ai() {
         foo = Math.random();
         foo = foo/3*10;
         bar = Math.round(bar);
-        return this.y;
+        return this.bar;
     }
 }
