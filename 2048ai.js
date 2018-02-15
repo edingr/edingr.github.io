@@ -1,6 +1,4 @@
 function Ai() {
-    var foo;
-    var bar;
     this.init = function() {
         // This method is called when AI is first initialized.
     }
