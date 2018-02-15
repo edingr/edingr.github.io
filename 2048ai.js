@@ -26,9 +26,10 @@ function Ai() {
 
         // sample AI:
         if (this.foo == null) this.foo = 0;
-        x = Math.random();
-        x = x/3*10;
-        y = Math.round(x);
+        if (this.bar == null) this.bar = 0;
+        foo = Math.random();
+        foo = foo/3*10;
+        bar = Math.round(bar);
         return this.y;
     }
 }
