@@ -6,6 +6,10 @@ function Ai() {
     this.restart = function() {
         // This method is called when the game is reset.
     }
+    
+    this.copy = function() {
+        console.log(this);   
+    }
 
     this.step = function(grid) {
         // This method is called on every update.
