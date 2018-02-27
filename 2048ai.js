@@ -28,6 +28,8 @@ function Ai() {
         
         if (grid.cells[0][0] != null) {
             console.log(grid.cells[0][0].value);
+        } else {
+            console.log("0");
         }
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
