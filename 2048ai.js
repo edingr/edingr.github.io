@@ -32,7 +32,7 @@ function Ai() {
             console.log("0");
         }
         
-        jQuery.each(grid.cells, function(index, itemxyz) {
+        jQuery.each(grid.cells, function(value, itemxyz) {
             console.log("Array: " + itemxyz);
         });
 
