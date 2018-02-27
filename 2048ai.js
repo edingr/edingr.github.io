@@ -32,8 +32,8 @@ function Ai() {
             console.log("0");
         }
         
-        grid.forEach(function(item) {
-            console.log("Array: " + item)
+        grid.forEach(function(itemx) {
+            console.log("Array: " + itemx);
         });
 
         
