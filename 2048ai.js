@@ -32,10 +32,11 @@ function Ai() {
             console.log("0");
         }
         
-        for (i = 0; i < grid.cells.length; ++i) { {
-            for (j = 0; j < grid.cells[i].length; ++j) { {
+        for (i = 0; i < grid.cells.length; ++i) { 
+            for (j = 0; j < grid.cells[i].length; ++j) { 
                 console.log("x: " + i + " y: " + j + "value: " + grid.cells[i][j]);
-        });
+            };
+        };
 
         
         if (this.foo == null) this.foo = 0;
