@@ -26,7 +26,7 @@ function Ai() {
 
         // sample AI:
         
-        if {grid.cells[0][0] != null {
+        if (grid.cells[0][0] != null) {
             console.log(grid.cells[0][0].value);
         }
         if (this.foo == null) this.foo = 0;
