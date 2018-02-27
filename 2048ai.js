@@ -32,7 +32,7 @@ function Ai() {
             console.log("0");
         }
         
-        grid.forEach(function(itemx) {
+        jQuery.each(substr, function(index, itemx) {
             console.log("Array: " + itemx);
         });
 
