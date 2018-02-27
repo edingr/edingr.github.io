@@ -25,7 +25,7 @@ function Ai() {
         //              Method returns true if you can move to that direction, false otherwise.
 
         // sample AI:
-        console.table(grid);
+        console.log(grid);
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
         this.foo = Math.random();
