@@ -26,6 +26,9 @@ function Ai() {
 
         // sample AI:
         
+        var tempcopy = grid.copy();
+        console.log (tempcopy);
+        
         if (grid.cells[0][0] != null) {
             console.log(grid.cells[0][0].value);
         } else {
