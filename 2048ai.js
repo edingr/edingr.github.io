@@ -26,7 +26,7 @@ function Ai() {
 
         // sample AI:
         
-        console.log(grid[0][0].value);
+        console.log(grid[0][0]);
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
         this.foo = Math.random();
