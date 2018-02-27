@@ -43,11 +43,13 @@ function Ai() {
         };
 
         
-        if (this.foo == null) this.foo = 0;
+        /*if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
         this.foo = Math.random();
         this.foo = this.foo/3*10;
-        this.bar = Math.round(this.foo);
+        this.bar = Math.round(this.foo);*/
+        
+        this.bar = 1;
         return this.bar;
     }
 }
