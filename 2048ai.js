@@ -32,8 +32,8 @@ function Ai() {
             console.log("0");
         }
         
-        jQuery.each(grid, function(index, itemx) {
-            console.log("Array: " + itemx);
+        jQuery.each(grid, function(index, itemxyz) {
+            console.log("Array: " + itemxyz);
         });
 
         
