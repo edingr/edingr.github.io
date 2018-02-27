@@ -6,10 +6,6 @@ function Ai() {
     this.restart = function() {
         // This method is called when the game is reset.
     }
-    
-    this.copy = function() {
-        console.log(this);   
-    }
 
     this.step = function(grid) {
         // This method is called on every update.
@@ -29,6 +25,7 @@ function Ai() {
         //              Method returns true if you can move to that direction, false otherwise.
 
         // sample AI:
+        console.log(grid);
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
         this.foo = Math.random();
