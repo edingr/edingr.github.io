@@ -31,6 +31,12 @@ function Ai() {
         } else {
             console.log("0");
         }
+        
+        grid.forEach(function(item) {
+            console.log("Array: " + item)
+        });
+
+        
         if (this.foo == null) this.foo = 0;
         if (this.bar == null) this.bar = 0;
         this.foo = Math.random();
