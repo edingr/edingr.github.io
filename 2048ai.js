@@ -28,26 +28,29 @@ function Ai() {
         var runter = 0;
         var rechts = 0;
         var tempcopy = grid.copy();
+        var x = 0;
+        var y = 0;
         console.log (tempcopy);
-        
-        if (grid.cells[0][0] != null) {
-            console.log(grid.cells[0][0].value);
-        } else {
-            console.log("0");
-        }
-        
+    
         for (i = 0; i < 4; ++i) { 
             for (j = 0; j < 3; ++j) { 
                 k = j + 1;
+                x = 0;
+                y = 0;
                 if (grid.cells[3][j] != null) {
-                    if (grid.cells[3][j].value == grid.cells[3][k].value) {
-                        runter = runter + 3;
-                        console.log("Runter: " + runter);
-                    } else {
-                        rechts = rechts + 1;
-                        console.log("Rechts: " + rechts);
-                    } 
+                    x = grid.cells[3][j];
                 }
+                if (grid.cells[3][k] != null) {
+                    y = grid.cells[3][k];
+                }
+                
+                if (x == y) {
+                    runter = runter + 3;
+                    console.log("Runter: " + runter);
+                } else {
+                    rechts = rechts + 1;
+                    console.log("Rechts: " + rechts);
+                } 
 
                 
                 /*if (grid.cells[i][j] != null) {
