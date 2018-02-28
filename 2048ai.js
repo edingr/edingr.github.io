@@ -35,13 +35,23 @@ function Ai() {
             console.log("0");
         }
         
-        for (i = 0; i < grid.cells.length; ++i) { 
-            for (j = 0; j < grid.cells[i].length; ++j) { 
-                if (grid.cells[i][j] != null) {
+        for (i = 0; i < 4; ++i) { 
+            for (j = 0; j < 3; ++j) { 
+                k = j + 1;
+                if (grid.cells[3][j] != null) {
+                    if (grid.cells[3][j].value == grid.cells[3][k].value) {
+                        runter = runter + 3;
+                    } else {
+                        rechts = rechts + 1;
+                    } 
+                }
+
+                
+                /*if (grid.cells[i][j] != null) {
                     console.log("x: " + i + " y: " + j + " value: " + grid.cells[i][j].value);
                 } else {
                     console.log("x: " + i + " y: " + j + " value: 0");
-                }
+                }*/
             };
         };
 
@@ -52,12 +62,15 @@ function Ai() {
         this.foo = this.foo/3*10;
         this.bar = Math.round(this.foo);*/
         
-        if (grid.cells[3][3].value == grid.cells[3][2].value || grid.cells[3][2].value == grid.cells[3][1].value || grid.cells[3][1].value == grid.cells[3][0].value) {
+        
+        
+        if (rechts > runter) {
+            this.bar = 1;
+            return this.bar;   
+        } else {
             this.bar = 2;
             return this.bar;
-        } else {
-            this.bar = 1;
-            return this.bar;
-        } 
+        }
+        
     }
 }
