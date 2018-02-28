@@ -52,7 +52,12 @@ function Ai() {
         this.foo = this.foo/3*10;
         this.bar = Math.round(this.foo);*/
         
-        this.bar = 1;
-        return this.bar;
+        if (grid.cells[3][3].value == grid.cells[3][2].value || grid.cells[3][2].value == grid.cells[3][1].value || grid.cells[3][1].value == grid.cells[3][0].value) {
+            this.bar = 2;
+            return this.bar;
+        } else {
+            this.bar = 1;
+            return this.bar;
+        }
     }
 }
