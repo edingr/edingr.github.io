@@ -70,7 +70,7 @@ function Ai() {
         this.foo = this.foo/3*10;
         this.bar = Math.round(this.foo);*/
         
-        test = this.move(3);
+        return grid.move(3);
         
         console.log("Runter: " + runter + " Rechts: " + rechts);
         if (rechts >= runter) {
