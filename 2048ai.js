@@ -25,7 +25,8 @@ function Ai() {
         //              Method returns true if you can move to that direction, false otherwise.
 
         // sample AI:
-        
+        var links = 0;
+        var rechts = 0;
         var tempcopy = grid.copy();
         console.log (tempcopy);
         
