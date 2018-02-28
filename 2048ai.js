@@ -70,16 +70,7 @@ function Ai() {
         this.foo = this.foo/3*10;
         this.bar = Math.round(this.foo);*/
         
-        for (i = 0; i < 4; ++i) { 
-            for (j = 0; j < 4; ++j) {
-                if (tempcopy.cells[i][j] != null && grid.cells[i][j] != null) {
-                    if (tempcopy.cells[i][j].value != grid.cells[i][j].value) {
-                        different = 1;
-                        console.log(different);
-                    }
-                }
-            }
-        }
+        test = this.move(3);
         
         console.log("Runter: " + runter + " Rechts: " + rechts);
         if (rechts >= runter) {
