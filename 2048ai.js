@@ -67,7 +67,7 @@ function Ai() {
         
         
         console.log("Runter: " + runter + " Rechts: " + rechts);
-        if (rechts > runter) {
+        if (rechts >= runter) {
             this.bar = 1;
             return this.bar;   
         } else {
