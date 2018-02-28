@@ -75,6 +75,9 @@ function Ai() {
         if (rechts >= runter) {
             this.bar = 1;
             console.log(grid.move(1));
+            if (grid.move(1) == false {
+                this.bar = 0;
+            }
             return this.bar;   
         } else {
             this.bar = 2;
