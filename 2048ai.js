@@ -38,13 +38,13 @@ function Ai() {
                 x = 0;
                 y = 0;
                 if (grid.cells[3][j] != null) {
-                    x = grid.cells[3][j];
+                    x = grid.cells[3][j].value;
                 }
                 if (grid.cells[3][k] != null) {
-                    y = grid.cells[3][k];
+                    y = grid.cells[3][k].value;
                 }
                 
-                if ((x > 0 || y > 0) || (x > 0 && y > 0)) {
+                if (x > 0 || y > 0) {
                     if (x == y) {
                         runter = runter + 3;
                         console.log("Runter: " + runter);
