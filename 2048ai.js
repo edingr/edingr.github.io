@@ -69,15 +69,16 @@ function Ai() {
         this.foo = Math.random();
         this.foo = this.foo/3*10;
         this.bar = Math.round(this.foo);*/
-        
-        console.log(grid.move(3));
+     
         
         console.log("Runter: " + runter + " Rechts: " + rechts);
         if (rechts >= runter) {
             this.bar = 1;
+            console.log(grid.move(1));
             return this.bar;   
         } else {
             this.bar = 2;
+            console.log(grid.move(2));
             return this.bar;
         }
         
