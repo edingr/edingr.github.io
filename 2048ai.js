@@ -44,13 +44,15 @@ function Ai() {
                     y = grid.cells[3][k];
                 }
                 
-                if (x == y && x > 0) {
-                    runter = runter + 3;
-                    console.log("Runter: " + runter);
-                } else {
-                    rechts = rechts + 1;
-                    console.log("Rechts: " + rechts);
-                } 
+                if (x > 0 || y > 0) {
+                    if (x == y) {
+                        runter = runter + 3;
+                        console.log("Runter: " + runter);
+                    } else {
+                        rechts = rechts + 1;
+                        console.log("Rechts: " + rechts);
+                    } 
+                }
 
                 
                 /*if (grid.cells[i][j] != null) {
