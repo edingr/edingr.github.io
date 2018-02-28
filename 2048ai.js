@@ -42,8 +42,10 @@ function Ai() {
                 if (grid.cells[3][j] != null) {
                     if (grid.cells[3][j].value == grid.cells[3][k].value) {
                         runter = runter + 3;
+                        console.log("Runter: " + runter);
                     } else {
                         rechts = rechts + 1;
+                        console.log("Rechts: " + rechts);
                     } 
                 }
 
@@ -64,7 +66,7 @@ function Ai() {
         this.bar = Math.round(this.foo);*/
         
         
-        
+        console.log("Runter: " + runter + " Rechts: " + rechts);
         if (rechts > runter) {
             this.bar = 1;
             return this.bar;   
