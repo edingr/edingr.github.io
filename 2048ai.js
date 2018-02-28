@@ -44,7 +44,7 @@ function Ai() {
                     y = grid.cells[3][k];
                 }
                 
-                if (x == y) {
+                if (x == y && x > 0) {
                     runter = runter + 3;
                     console.log("Runter: " + runter);
                 } else {
