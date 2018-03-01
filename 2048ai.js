@@ -77,6 +77,9 @@ function Ai() {
             console.log(grid.move(1));
             if (grid.move(1) == false) { // Logik falsch???
                 this.bar = 0;
+                if (grid.move(0) == false) {
+                    this.bar = 2;   
+                }
             }
             return this.bar;   
         } else {
