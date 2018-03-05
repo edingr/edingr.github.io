@@ -3,7 +3,7 @@ function Ai() {
         // This method is called when AI is first initialized.
     }
 
-    this.restart = function() { 
+    this.restart = function() {
         // This method is called when the game is reset.
     }
 
